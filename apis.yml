@@ -1,8 +1,27 @@
 aid: agreena
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/agreena.png
 name: Agreena
-description: 'Agreena is a company surfaced as a portfolio company of anthemis, hv-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: climate. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Agreena is a Copenhagen-based agtech and climate finance company, founded in 2021,
+  that helps farmers transition to regenerative agriculture and monetize the resulting soil-carbon
+  outcomes. Its AgreenaCarbon platform combines farmer enrollment, a satellite-, AI-, and
+  soil-sampling-based digital measurement, reporting and verification (dMRV) engine, and
+  Verra-certified carbon credit issuance. Agreena also offers standalone remote-sensing
+  products such as a field-boundary-detection API for agrifood supply-chain monitoring.
+  The platform spans roughly 5 million hectares and 2,500+ farmers across ~20 European
+  countries. This profile was surfaced as a portfolio company of Anthemis and HV Capital
+  and is being enriched by the API Evangelist pipeline; Agreena publishes no public
+  developer portal or OpenAPI surface at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/agreena/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,13 +32,43 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Climate
+- Carbon
+- Agriculture
+- Regenerative Agriculture
+- Carbon Credits
+- MRV
+- Remote Sensing
+- Sustainability
+- AgTech
 apis: []
+common:
+- type: DomainSecurity
+  url: security/agreena-domain-security.yml
+- type: Website
+  url: https://agreena.com/
+- type: SignUp
+  url: https://app.agreena.com/
+- type: Documentation
+  url: https://agreena.com/documentation/
+- type: Support
+  url: https://help.agreena.com/en/
+- type: Blog
+  url: https://agreena.com/blog/
+- type: PrivacyPolicy
+  url: https://agreena.com/privacy-policy/
+- type: TermsOfService
+  url: https://agreena.com/terms/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
