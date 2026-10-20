@@ -1,0 +1,66 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 4
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - identity
+  - support
+  - website
+hosts:
+- host: agreena.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - Newsroom
+  - Website
+  - Documentation
+  - Blog
+  - PrivacyPolicy
+  - TermsOfService
+  serves:
+  - docs
+  registrable_domain: agreena.com
+  role: website
+  relation: own
+- host: api.agreena.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: agreena.com
+  role: api
+  relation: own
+- host: app.agreena.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - SignUp
+  serves: []
+  registrable_domain: agreena.com
+  role: identity
+  relation: own
+- host: help.agreena.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: agreena.com
+  role: support
+  relation: own
